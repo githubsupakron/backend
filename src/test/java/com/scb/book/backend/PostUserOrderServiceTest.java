@@ -62,7 +62,7 @@ class PostUserOrderServiceTest {
 
         PostUsersOrderResponse response = postUsersOrderService.execute(postUserOrderRequest);
 
-        Assertions.assertEquals(response.getPrice(),"400.0");
+        Assertions.assertEquals(response.getPrice(),"400.0"); 
     }
 
 

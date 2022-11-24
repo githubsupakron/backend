@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://${SECRET_DB_HOST:localhost}:${SECRET_DB_PORT:5432}/test
+    username: ${SECRET_DB_USERNAME:postgres}
+    password: ${SECRET_DB_PASSWORD:syspass}
+---
+app:
+  token:
+    secret: ${SECRET_JWT_SECRET:'c#MyTestSeceret20221124'}
+    issuer: BackendService
